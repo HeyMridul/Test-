@@ -1,35 +1,58 @@
 # Test-
-
 ```mermaid
 graph TD
 
-subgraph Cloud Infrastructure
-    subgraph "Load Balancer & Traffic Mgmt."
+subgraph "Technical Architecture of GovPay+"
+    subgraph "Infrastructure Layer"
+        "Cloud Infrastructure"
+        "Private Blockchain"
     end
-    subgraph "Distributed Ledger/Blockchain"
+
+    subgraph "Data Layer"
+        "Distributed Ledger"
+        "Relational & NoSQL Databases"
     end
-    subgraph "Relational DB Cluster"
+
+    subgraph "API & Middleware Layer"
+        "RESTful APIs"
+        "Message Brokers (like Kafka)"
     end
-    subgraph "NoSQL DB Cluster"
+
+    subgraph "Application Layer"
+        "Core Transaction Engine"
+        "AI & ML Modules"
     end
-    subgraph "API Gateway"
+
+    subgraph "Integration Layer"
+        "Banking & Financial API Connectors"
+        "Government Portal Connectors"
     end
-    subgraph "Middleware"
+
+    subgraph "Security Layer"
+        "Encryption-at-Rest & In-Transit"
+        "Hardware Security Modules (HSMs)"
+        "Multi-Signature Wallets"
     end
-    subgraph "Core Transaction Engine w/ Smart Contract Support"
+
+    subgraph "User Interface (UI) Layer"
+        "Web, Mobile & Desktop Clients"
+        "Voice & Chatbot Interfaces"
+        "Biometric Authentication"
     end
-    subgraph "Bank Integration"
-    end
-    subgraph "Govt. Services"
-    end
-    subgraph "Security & Encryption"
-    end
-    subgraph "User Interfaces (Web, Mobile, Desk)"
-    end
+
     subgraph "Networking & Communication Layer"
+        "P2P Network Protocols"
+        "Load Balancers"
+        "Content Delivery Network (CDN)"
     end
-    subgraph "Backup & Disaster Recovery"
+
+    subgraph "Backup & Recovery"
+        "Hot, Warm, and Cold Backups"
+        "Geographically Distributed Backups"
     end
-    subgraph "Monitoring, Mgmt, & Alerts"
+
+    subgraph "Monitoring & Management"
+        "Log Management"
+        "Performance Monitoring"
     end
 end
